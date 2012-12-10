@@ -13,7 +13,7 @@
 	<artifactId>subsonic-main</artifactId>
 	<packaging>war</packaging>
 
-	<name>Subsonic Main</name>
+	<name>TokyoThunder</name>
 
 	<properties>
 		<version.musiccabinet>0.7.16</version.musiccabinet>
