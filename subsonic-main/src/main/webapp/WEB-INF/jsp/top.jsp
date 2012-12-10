@@ -43,10 +43,6 @@
 	            <a href="fileTree.view?" target="main">File tree</a>
 	        </td>
             <td style="min-width:4em;padding-right:1.5em">
-                <a href="podcastReceiver.view?" target="main"><img src="<spring:theme code="podcastLargeImage"/>" title="${podcast}" alt="${podcast}"></a><br>
-                <a href="podcastReceiver.view?" target="main">${podcast}</a>
-            </td>
-            <td style="min-width:4em;padding-right:1.5em">
                 <a href="nowPlaying.view?" target="main"><img src="<spring:theme code="nowPlayingImage"/>" title="${nowPlaying}" alt="${nowPlaying}"></a><br>
                 <a href="nowPlaying.view?" target="main">${nowPlaying}</a>
             </td>
@@ -60,10 +56,7 @@
                 <a href="status.view?" target="main"><img src="<spring:theme code="statusImage"/>" title="${status}" alt="${status}"></a><br>
                 <a href="status.view?" target="main">${status}</a>
             </td>
-            <td style="min-width:4em;padding-right:1.5em">
-                <a href="help.view?" target="main"><img src="<spring:theme code="helpImage"/>" title="${help}" alt="${help}"></a><br>
-                <a href="help.view?" target="main">${help}</a>
-            </td>
+            
 
             <td style="padding-left:1em">
                 <form method="post" action="search.view" target="main" name="searchForm">
@@ -79,8 +72,7 @@
                     <a href="j_spring_security_logout" target="_top"><fmt:message key="top.logout"><fmt:param value="${model.user.username}"/></fmt:message></a>
                     <c:if test="${not model.licensed}">
                         <br>
-                        <a href="donate.view" target="main"><img src="<spring:theme code="donateSmallImage"/>" alt=""></a>
-                        <a href="donate.view" target="main"><fmt:message key="donate.title"/></a>
+                    
                     </c:if>
                 </p>
             </td>
