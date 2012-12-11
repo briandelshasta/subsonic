@@ -84,6 +84,11 @@
 		</p>
 	</c:forEach>
 </c:if>
+         <c:if test="${empty model.filebased}"> 
+	<c:if test="${model.uploadRole}"><a target="main" href="http://http://nas.tokyothunder.com:8080/gui">Torrent new media</a><br></c:if>
+             <c:if test="${model.uploadRole}"><a target="main" href="more.view">Upload new media</a><br></c:if>
+	<c:if test="${model.adminRole}"><a target="main" href="missingAlbums.view">Missing albums</a><br></c:if>
+</c:if>
 <c:if test="${not empty model.mediaFolders}">
 	<h2 class="bgcolor1">Media folders</h2>
 	<c:forEach items="${model.mediaFolders}" var="mediaFolder">
@@ -144,12 +149,7 @@
 
 
 
-<c:if test="${empty model.filebased}">
-	<div style="height:2em"></div><hr>
-	<c:if test="${model.uploadRole}"><a target="main" href="more.view">Upload new music</a><br></c:if>
-	<c:if test="${model.adminRole}"><a target="main" href="missingAlbums.view">Missing albums</a><br></c:if>
-	<a href="left.view?method=file">File-based browsing</a>
-</c:if>
+
 
 <div style="height:5em"></div>
 

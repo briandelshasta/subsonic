@@ -16,7 +16,7 @@
 <fmt:message key="top.search" var="search"/>
 
 <table style="margin:0"><tr valign="middle">
-    <td class="logo" style="padding-right:2em"><a href="help.view?" target="main"><img src="<spring:theme code="logoImage"/>" title="${help}" alt=""></a></td>
+    <td class="logo" style="padding-right:2em"><img src="<spring:theme code="logoImage"/>" title="${help}" alt=""></a></td>
 
     <c:if test="${not model.mediaFoldersExist}">
         <td style="padding-right:2em">
@@ -37,10 +37,6 @@
 	        <td style="min-width:4em;padding-right:1.5em">
 	            <a href="radio.view?" target="main"><img src="<spring:theme code="radioImage"/>" title="Radio" alt="Radio"></a><br>
 	            <a href="radio.view?" target="main">Radio</a>
-	        </td>
-	        <td style="min-width:4em;padding-right:1.5em">
-	            <a href="fileTree.view?" target="main"><img src="<spring:theme code="fileTreeImage"/>" title="File tree" alt="File tree"></a><br>
-	            <a href="fileTree.view?" target="main">File tree</a>
 	        </td>
             <td style="min-width:4em;padding-right:1.5em">
                 <a href="nowPlaying.view?" target="main"><img src="<spring:theme code="nowPlayingImage"/>" title="${nowPlaying}" alt="${nowPlaying}"></a><br>
